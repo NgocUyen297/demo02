@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS cho phan nav */
+nav {
+    background-color: lightgray;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    border-top: 1px solid #b3a996;
+    border-bottom: 1px solid #b3a996;
+    height: 148px;
+    width: 100%;
+    transition: all .3s;
+}
+
+nav.lienket>ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    margin: 50px;
+    right: -175px;
+
+}
+
+nav.lienket>ul>li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+p.thuonghieu {
+    margin: 45px;
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+sub.year {
+    font-size: 13px;
+    font-family: inherit;
+}
+
+nav.lienket>ul>li:hover a {
+    color: brown;
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+/* CSS cho menu Con */
+ul.menuCon {
+    display: none;
+    z-index: 10;
+}
+
+li.smallmenu:hover>ul {
+    display: block;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.smallmenu:hover>ul>li>a {
+    color: blue;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+/* CSS cho header*/
+div.father-images {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.images>img {
+    height: 400px;
+    width: 100%;
+}
+
+div.anhnho {
+    display: block;
+}
+
+div.anhnho>ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 241px;
+    margin-right: auto;
+}
+
+/*  CSS CHO BANNER*/
+.myslide:first-child {
+    display: block;
+}
+
+.myslide {
+    display: none;
+}
+
+div.banner {
+    display: flex;
+}
+
+div.bigbanner {
+    width: 65%;
+    padding: 0px 10px 0px 10px;
+}
+
+div.bigbanner>img {
+    width: 100%;
+    height: 100%;
+}
+
+div.smallbanner {
+    width: 45%;
+}
+
+div.anh {
+    height: 50%;
+}
+
+div.anh>img {
+    width: 100%;
+}
+
+div.con2 {
+    padding-top: 10px;
+}
+
+/* CSS cho big line */
+div.bigline {
+    display: flex;
+}
+
+div.bigline hr {
+    color: red;
+    background: red;
+    border: 0;
+    height: 1px;
+    margin: 10px 0 20px;
+}
+
+div.topsale {
+    border: 1px solid orange;
+    background-color: orange;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.topsale>p {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+/* CSS SECTION */
+section.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CSS CHO PRODUCT*/
+div.product {
+    margin: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+    position: relative;
+}
+
+div.review {
+    margin: 0;
+}
+
+div.product>div>img {
+    width: 100%;
+    border: 0;
+}
+
+div.price {
+    width: 90%;
+    padding-top: 10px;
+}
+
+div.price a {
+    text-decoration: none;
+    color: black;
+}
+
+div.product:hover {
+    border: 0.1px solid lightgray;
+}
+
+div.price a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+/* CSS CHO FOOTER */
+footer {
+    width: 100%;
+}
+
+div.infos {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 15px;
+}
+
+div.infos>div>ul {
+    list-style-type: none;
+
+}
+
+div.col25 {
+    width: 25%;
+}
+
+div.col50 {
+    width: 50%;
+}
+
+div.col50 img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+footer ul {
+    padding: 0;
+}
+
+div.line {
+    margin: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+div.howtopay {
+    background-color: black;
+    display: flex;
+    color: #ffffff;
+}
+
+div.connect {
+    width: 50%;
+}
+
+div.connect>ul {
+    padding: 15px;
+    list-style-type: none;
+    margin: 2px;
+}
+
+div.namphantram {
+    width: 50%;
+    text-align: center;
+}
+
+div.pay {
+    display: inline-block;
+    padding: 15px;
+}
+
+/* CSS CHO GO TO TOP */
+div.gototop {
+    background-color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.sukienscroll {
+    position: fixed;
+    z-index: 9;
+    height: 125px;
+}

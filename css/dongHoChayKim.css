@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS cho phan nav */
+nav {
+    background-color: lightgray;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    border-top: 1px solid #b3a996;
+    border-bottom: 1px solid #b3a996;
+    height: 148px;
+    width: 100%;
+    transition: all .3s;
+}
+
+nav.lienket>ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    margin: 50px;
+    right: -175px;
+
+}
+
+
+nav.lienket>ul>li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+p.thuonghieu {
+    margin: 45px;
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+sub.year {
+    font-size: 13px;
+    font-family: inherit;
+}
+
+nav.lienket>ul>li:hover a {
+    color: brown;
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+/* CSS cho menu Con */
+ul.menuCon {
+    display: none;
+    z-index: 10;
+}
+
+li.smallmenu:hover>ul {
+    display: block;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.smallmenu:hover>ul>li>a {
+    color: blue;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+/* CSS BANNER */
+div.banner {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    height: 300px;
+}
+
+div.anh {
+    height: 245px;
+}
+
+div.anh>img {
+    width: 100%;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
+div.bottom {
+    position: absolute;
+}
+
+.left {
+    width: 1%;
+    background-color: white;
+}
+
+.right {
+    width: 1%;
+    background-color: white;
+}
