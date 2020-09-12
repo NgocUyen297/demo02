@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS CHO H1 */
+h1 {
+    text-align: center;
+}
+
+/* CSS cho NAV */
+nav {
+    background-color: lightgray;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    border-top: 1px solid #b3a996;
+    border-bottom: 1px solid #b3a996;
+    height: 148px;
+    width: 100%;
+    transition: all .3s;
+}
+
+ul.menu {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    margin: 50px;
+    right: -175px;
+
+}
+
+ul.menu>li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+p.thuonghieu {
+    margin: 45px;
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+sub.year {
+    font-size: 13px;
+    font-family: inherit;
+}
+
+ul>.menu>li:hover a {
+    color: brown;
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+/* CSS cho menu Con */
+ul.menuCon {
+    display: none;
+    z-index: 10;
+}
+
+li.smallmenu:hover>ul {
+    display: block;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.smallmenu:hover>ul>li>a {
+    color: blue;
+    text-decoration: none;
+    font-size: small;
+}
+
+section.language {
+    border-top: 2px dsotted lightgray;
+    border-bottom: 2px dotted lightgray;
+    margin-left: 50px;
+
+}
+
+div.father {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+div.lang1 {
+    margin-left: 30px;
+}
+
+div.lang1>p:first-child {
+    margin-top: 0;
+}
+
+div.lang {
+    width: 35%;
+
+}
+
+div.lang img {
+    width: 100%;
+}
+
+/*CC*/
+div.infos {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 15px;
+}
+
+div.infos>div>ul {
+    list-style-type: none;
+
+}
+
+div.col25 {
+    width: 25%;
+}
+
+div.col50 {
+    width: 50%;
+}
+
+div.col50 img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+footer ul {
+    padding: 0;
+}
+
+div.line {
+    margin: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+div.howtopay {
+    background-color: black;
+    display: flex;
+    color: #ffffff;
+}
+
+div.connect {
+    width: 50%;
+}
+
+div.connect>ul {
+    padding: 15px;
+    list-style-type: none;
+    margin: 2px;
+}
+
+div.namphantram {
+    width: 50%;
+    text-align: center;
+}
+
+div.pay {
+    display: inline-block;
+    padding: 15px;
+}
+
+/* */
+
+
+div.main_system {
+    width: 85%;
+    margin: 0 auto;
+}
+
+div.main_system iframe {
+    width: 100%;
+}
+
+/* CSS CHO GO TO TOP */
+
+.sukienscroll {
+    position: fixed;
+    z-index: 9;
+    height: 125px;
+}
+
+div.gototop {
+    background-color: white;
+    position: fixed;
+    bottom: 100px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+/* CSS cho links moblie */
+nav.links_mobile {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+div.nav_moblie {
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 10xp;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    z-index: 99;
+    border-radius: 0 10px 10px 0;
+    transform: translateX(-100%);
+}
+
+div.nav_moblie>ul {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+
+}
+
+div.nav_moblie>ul li>a {
+    background-color: white;
+    padding-top: 30px;
+    color: black !important;
+    border-bottom: 1px solid lightgray;
+}
+
+.layout_black {
+    z-index: 3;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.3;
+    display: none;
+}
+
+input#mobile_input:checked~.layout_black {
+    display: block;
+}
+
+input#mobile_input:checked~div.nav_moblie {
+    transform: translateX(0%);
+}
+
+label.bars {
+    position: absolute;
+    top: 53px;
+    font-size: xx-large;
+    color: red;
+    left: 5px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav_thuongHieu {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    nav.lienket {
+        display: none;
+    }
+
+
+    nav.links_mobile {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    div.product {
+        width: 48%;
+    }
+
+}

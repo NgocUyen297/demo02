@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* CSS cho phan nav */
@@ -16,7 +17,7 @@ nav {
     transition: all .3s;
 }
 
-nav.lienket>ul {
+ul.menu {
     list-style-type: none;
     display: flex;
     position: relative;
@@ -25,7 +26,7 @@ nav.lienket>ul {
 
 }
 
-nav.lienket>ul>li a {
+ul.menu>li a {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -47,11 +48,13 @@ sub.year {
     font-family: inherit;
 }
 
-nav.lienket>ul>li:hover a {
+ul>.menu>li:hover a {
     color: brown;
     text-decoration: underline;
     background-color: #f0f0f0;
 }
+
+
 
 /* CSS cho menu Con */
 ul.menuCon {
@@ -138,6 +141,8 @@ div.con2 {
 /* CSS cho big line */
 div.bigline {
     display: flex;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
 div.bigline hr {
@@ -145,7 +150,7 @@ div.bigline hr {
     background: red;
     border: 0;
     height: 1px;
-    margin: 10px 0 20px;
+    margin: 10px;
 }
 
 div.topsale {
@@ -296,4 +301,114 @@ div.gototop {
     position: fixed;
     z-index: 9;
     height: 125px;
+}
+
+
+
+/* CSS cho links moblie */
+nav.links_mobile {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+div.nav_moblie {
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 10xp;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    z-index: 99;
+    border-radius: 0 10px 10px 0;
+    transform: translateX(-100%);
+}
+
+div.nav_moblie>ul {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+
+}
+
+div.nav_moblie>ul li>a {
+    background-color: white;
+    padding-top: 30px;
+    color: black !important;
+    border-bottom: 1px solid lightgray;
+}
+
+.layout_black {
+    z-index: 3;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.3;
+    display: none;
+}
+
+input#mobile_input:checked~.layout_black {
+    display: block;
+}
+
+input#mobile_input:checked~div.nav_moblie {
+    transform: translateX(0%);
+}
+
+label.bars {
+    position: absolute;
+    top: 53px;
+    font-size: xx-large;
+    color: red;
+    left: 5px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav_thuongHieu {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .smallbanner {
+        display: none;
+    }
+
+    nav.lienket {
+        display: none;
+    }
+
+    div.bigbanner {
+        width: 100%;
+
+    }
+
+    .father-images {
+        display: none;
+    }
+
+    nav.links_mobile {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    div.product {
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .nav_thuongHieu {
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
 }
