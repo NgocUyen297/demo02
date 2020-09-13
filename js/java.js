@@ -3,6 +3,17 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     var menu = document.querySelectorAll('nav.lienket');
+
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            menu = menu[1];
+        } else {
+            menu = menu[0];
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 1023px)");
+    myFunction(x); // Call listener function at run time
     //Truy xuất div menu
     var trangthai = "duoi300";
     window.addEventListener("scroll", function () {
