@@ -411,39 +411,4 @@ label.bars {
         text-align: center;
         font-size: large;
     }
-
-    .namphantram {
-        display: none;
-    }
-
-    .products {
-        width: 100%;
-    }
-
-    .product {
-        width: 100% !important;
-        margin: 0 auto;
-    }
-
-    p.thuonghieu {
-        margin: 53px;
-        font-size: large;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .col25 {
-        width: 100% !important;
-        margin: 0;
-    }
-
-    .col50 {
-        display: none;
-    }
-
-    .connect {
-        width: 100% !important;
-    }
 }
