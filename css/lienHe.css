@@ -206,9 +206,14 @@ div.gototop {
     font-size: 32px;
     color: black;
     text-decoration: none;
-    pointer-events: none;
     transition: all .4s;
 }
+
+div.gototop>a {
+    display: block;
+    padding: 15px 15px;
+}
+
 
 /* CSS cho links moblie */
 nav.links_mobile {
@@ -276,7 +281,7 @@ label.bars {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 741px) and (max-width: 1024px) {
     .nav_thuongHieu {
         text-align: center;
         font-size: x-large;
@@ -287,6 +292,10 @@ label.bars {
     }
 
 
+    .father-images {
+        display: none;
+    }
+
     nav.links_mobile {
         display: block;
         margin-bottom: 40px;
@@ -296,4 +305,76 @@ label.bars {
         width: 48%;
     }
 
+}
+
+@media screen and (max-width: 739px) {
+    .nav_thuongHieu {
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
+
+    nav.lienket {
+        display: none;
+    }
+
+    nav.links_mobile {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .namphantram {
+        display: none;
+    }
+
+    /* system */
+    .language {
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .father {
+        flex-direction: column;
+    }
+
+    div.lang {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .lang1 {
+        margin-left: 0 !important;
+        padding: 6px;
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .product {
+        width: 96% !important;
+        margin: 0 auto;
+    }
+
+    p.thuonghieu {
+        margin: 53px;
+        font-size: large;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .col25 {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .col50 {
+        display: none;
+    }
+
+    .connect {
+        width: 100% !important;
+    }
 }
